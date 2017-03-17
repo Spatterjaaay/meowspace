@@ -82,7 +82,7 @@ main {
   height: 3em;
   width: auto;
   margin: 0;
-  padding: 5%;
+  /*padding: 5%;*/
   text-align: center;
   border-bottom: solid 2px;
   box-sizing: border-box;
@@ -122,35 +122,41 @@ article p a {
 
 #join-us {
   border-top: solid 2px;
-  height: 400px;
+}
+
+#join-us h2 {
   font-family: "Homemade Apple";
+  text-align: center;
 }
 
 .text {
   float: left;
   text-align: justify;
-  max-width: 40%;
-  padding: 10% 5%;
+  box-sizing: border-box;
+  max-width: 50%;
+  padding: 5% 2% 5% 12%;
 }
 
 .side-object {
   float: right;
-  padding: 4%;
-  width: 40%;
+  box-sizing: border-box;
+  padding: 2% 13% 2% 0;
+  width: 50%;
 }
 
 main section:last-of-type {
   clear: both;
 }
 
-#text-footer {
-  padding: 0 5%;
+footer div h4, #disclaimer {
+  display: inline;
 }
-
-/*footer div h4 {
-  display: inline-block;
-}*/
 
 footer nav ul li a {
   font-size: 1.5em;
+}
+
+#contact-links {
+  padding-top: 4%;
+
 }
