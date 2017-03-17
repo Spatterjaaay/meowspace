@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Coming+Soon|Homemade+Apple|Pacifico|Ranga');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Pacifico|Raleway');
 
-/*body {
-  font-family: "Homemade Apple";
-}*/
+body {
+  font-family: "Raleway";
+  background-color: #C9B1FF;
+}
 
 header {
-  background-color: pink;
-  color: back;
-  padding: 0 2%;
+  background-color: #C9B1FF;
+  box-sizing: border-box;
+  padding: 0 3%;
   position: fixed;
-  width: 96%;
-  top: 0px;
+  width: 100%;
+  top: 0;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -25,30 +26,46 @@ header nav {
   margin-bottom: auto;
 }
 
-header nav ul li {
-  padding-left: 10px;
-}
-
 a {
+  font-family: "Pacifico";
+  color: white;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
+  padding-left: 10px;
+  font-weight: normal;
 }
 
-header a:visited {
-  color: blue;
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #775DB2;
 }
 
 main {
-  margin-top: 95px;
+  margin-top: 82px;
+  background-color: white;
 }
+
+#title {
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
 
 .banner {
   position: absolute;
   width: 100%;
   font-family: Pacifico;
+  opacity: 0.8;
   font-size: 7em;
   text-align: center;
-  margin: 200px auto;
+  margin-top: 190px;
+  font-weight: normal;
 }
 
 .cat-background {
@@ -59,6 +76,8 @@ main {
   position: relative;
   width: auto;
   height: 500px;
+  border-top: solid 5px white;
+  border-bottom: solid 5px white;
 }
 
 #closing-statement {
@@ -68,30 +87,36 @@ main {
   background-position: center center;
 }
 
+#bottom-banner {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 150px;
+}
+
 .post {
   display: inline-block;
-  width: 28%;
-  height: 17em;
+  width: 27%;
+  height: 20em;
   vertical-align: text-top;
-  border: solid 2px;
+  border: solid 8px #666666;
   margin: 2%;
   border-radius: 10%;
 }
 
 .post h3 {
+  font-size: 1.2em;
   height: 3em;
   width: auto;
   margin: 0;
-  /*padding: 5%;*/
+  padding-top: 5%;
   text-align: center;
-  border-bottom: solid 2px;
+  border-bottom: solid 4px #666666;
   box-sizing: border-box;
 }
 
 .post p:first-of-type {
   text-align: justify;
-  height: 8em;
-  /*height: auto;*/
+  height: 10em;
   padding: 5% 10%;
   margin: 0;
   overflow: hidden;
@@ -101,32 +126,46 @@ main {
   text-align: center;
 }
 
-article p a {
-  border: solid 2px;
+.article-button a {
+  color: white;
+  font-weight: normal;
+  background-color: #666666;
   padding: 2% 8%;
   font-size: 1em;
   border-radius: 15px;
 }
 
+.article-button a:hover {
+  background-color: #775DB2;
+}
+
 #main-content {
   padding: 0 10%;
   margin-bottom: 1%;
+  margin: 0;
 }
 
 #main-content h2 {
+  font-family: Pacifico;
+  color: #775DB2;
+  font-weight: normal;
   text-align: center;
   font-size: 4em;
-  padding: 1% 0;
+  padding: 3% 0;
   margin: 0;
 }
 
 #join-us {
-  border-top: solid 2px;
+  border-top: solid 5px;
+  height: 400px;
+  background-color: #808080;
 }
 
 #join-us h2 {
   font-family: "Homemade Apple";
   text-align: center;
+  font-size: 3em;
+  color: white;
 }
 
 .text {
@@ -152,11 +191,6 @@ footer div h4, #disclaimer {
   display: inline;
 }
 
-footer nav ul li a {
-  font-size: 1.5em;
-}
-
 #contact-links {
   padding-top: 4%;
-
 }
